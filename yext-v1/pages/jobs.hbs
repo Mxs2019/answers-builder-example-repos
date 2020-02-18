@@ -1,0 +1,31 @@
+---
+title: Jobs
+description:
+---
+<script>
+	{ {> templates_standard_script_core } }
+	{ {> templates_standard_script_sorting } }
+	{ {> templates_standard_script_facets } }
+	{ {> templates_standard_script_searchbar } }
+	{ {> templates_standard_script_navigation } }
+	{ {> templates_standard_script_verticalResults } }
+	{ {> templates_standard_script_QandA } }
+</script>
+<div class="Answers">
+	{{> markup_searchFormAndNav }}
+	<div>
+		<div>
+			<div>Filters</div>
+			<div>
+				{{> templates_standard_markup_sorting }}
+				{{> templates_standard_markup_facets }}
+			</div>
+		</div>
+		<div>
+			{{> templates_standard_markup_searchbar}}
+			{{> templates_standard_markup_navigation}}
+			{{> templates_standard_markup_verticalResults}}
+			{{> templates_standard_markup_QandA}}
+		</div>
+	</div>
+</div>

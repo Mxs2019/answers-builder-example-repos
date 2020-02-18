@@ -1,0 +1,162 @@
+{
+  "configVersion": "1",
+  "deviceDetected": false,
+  "https": true,
+  "locales": ["en"],
+  "templateVersion": 8,
+  "features": [
+    {
+      "name": "Geocode IP",
+      "geocodeIP": {
+        "urlTemplate": "url.geocodeIp"
+      }
+    },
+    {
+      "name": "XML Sitemap",
+      "xmlsitemap": {
+        "urlTemplate": "url.xmlSitemap",
+        "blacklist": ["feedback/", "robots.txt"]
+      }
+    },
+    {
+      "name": "404 Page",
+      "staticPage": {
+        "urlTemplate": "url.page_404",
+        "template": "static.four_oh_four"
+      }
+    },
+    {
+      "name": "Robots.txt",
+      "staticPage": {
+        "urlTemplate": "url.page_robotstxt",
+        "template": "static.robotstxt"
+      }
+    },
+    {
+      "name": "universal",
+      "staticPage": {
+        "urlTemplate": "url.root_page",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "app_directory_partners",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "case_studies",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "events",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "webinars",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "faqs",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "jobs",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "leadership",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "offices",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "packages",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "products",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "publishers",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "industries",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "publications",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "zendesk",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "support",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "answers.all"
+      }
+    },
+    {
+      "name": "iframe_test",
+      "staticPage": {
+        "urlTemplate": "aeb.url",
+        "template": "aeb.iframe_test"
+      }
+    },
+    {
+      "name": "iFrame JavaScript",
+      "staticPage": {
+        "urlTemplate": "aeb.script_url",
+        "template": "aeb.script"
+      }
+    }
+  ]
+}
