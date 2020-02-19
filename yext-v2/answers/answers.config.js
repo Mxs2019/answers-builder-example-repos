@@ -30,6 +30,13 @@ export default {
           </g>
         </svg>`
   },
+  /*
+   * Verticals will automatically be included and added to the vertical property.
+   * If you want universal search to use different cards or something else from vertical,
+   * you can redefine a vertical here
+   */
+
+  verticals: [],
   searchBar: {
     title: "What are you looking for today?",
     labelText: "e.g., How do I create a new entity?",
