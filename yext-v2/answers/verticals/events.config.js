@@ -1,3 +1,5 @@
+import { Formatter } from "formatter";
+
 export default {
   sectionTitleIconName: "calendar",
   universalLimit: 3,

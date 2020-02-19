@@ -1,13 +1,13 @@
 export default {
-  sectionTitleIconName: "callout",
+  iconName: "callout",
   sectionTitle: "FAQs",
   universalLimit: 3,
-  navigationTitle: "FAQs",
-  useAccordion: true,
   pagination: true,
-  dataMappings: {
-    collapsed: true,
-    details: profile => profile.c_answer,
-    ctas: [ctaTypes.PRIMARY_CTA, ctaTypes.SECONDARY_CTA]
+  card: {
+    cardType: "Accordion",
+    callsToActionFields: ["c_primaryCTA", "c_secondaryCTA"],
+    templateMappings: {
+      details: profile => profile.c_answer
+    }
   }
 };

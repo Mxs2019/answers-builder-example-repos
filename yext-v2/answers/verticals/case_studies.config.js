@@ -1,14 +1,20 @@
+import { Formatter } from "formatter";
+
 export default {
-  sectionTitleIconName: "mic",
+  iconName: "callout",
+  sectionTitle: "FAQs",
   universalLimit: 3,
-  pagination: true,
-  dataMappings: {
-    image: profile => {
-      if (profile.logo) {
-        return Formatter.image(profile.logo.image);
-      }
-      if (profile.photoGallery) {
-        return Formatter.image(profile.photoGallery[0].image);
+  card: {
+    cartType: "Accordion",
+    callsToActionFields: ["c_primaryCTA", "c_secondaryCTA"],
+    templateMappings: {
+      image: profile => {
+        if (profile.logo) {
+          return Formatter.image(profile.logo.image);
+        }
+        if (profile.photoGallery) {
+          return Formatter.image(profile.photoGallery[0].image);
+        }
       }
     }
   }

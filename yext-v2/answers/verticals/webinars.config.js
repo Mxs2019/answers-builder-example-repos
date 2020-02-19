@@ -1,19 +1,28 @@
 export default {
-  sectionTitleIconName: "mic",
+  iconName: "mic",
   universalLimit: 3,
   pagination: true,
-  dataMappings: {
-    ctas: [ctaTypes.WATCH],
-    subtitle: profile => {
-      let subtitle = "";
-      const dates = Formatter.dateRange(profile);
-      const speakers = Formatter.joinList(profile.c_speakers, ", ");
-      subtitle += dates;
-      if (dates && speakers) {
-        subtitle += " - ";
+  card: {
+    callsToAction: [
+      {
+        analyticsEventType: "CTA_CLICK",
+        label: "Watch",
+        icon: "mic",
+        url: profile => profile.website_url
       }
-      subtitle += speakers;
-      return subtitle;
+    ],
+    templateMappings: {
+      subtitle: profile => {
+        let subtitle = "";
+        const dates = Formatter.dateRange(profile);
+        const speakers = Formatter.joinList(profile.c_speakers, ", ");
+        subtitle += dates;
+        if (dates && speakers) {
+          subtitle += " - ";
+        }
+        subtitle += speakers;
+        return subtitle;
+      }
     }
   }
 };
