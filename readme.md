@@ -13,3 +13,7 @@ This is the approach outlined in [Answers Builder - Ideal End State](https://doc
 ## yext-v2
 
 This is an alternative approach that more closely aligns to the vision of [bleecker](https://www.notion.so/Bleecker-d4673d6f837f4af09116364482a48903)
+
+## yext-v3
+
+Similar to V2 but using Closure instead of HBS. This will allows us to reuse templates.

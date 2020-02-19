@@ -1,0 +1,11 @@
+---
+title: Search anything at Yext!
+description:
+---
+{namespace page}
+{template .body}
+	{call .answers_loadUniversalSearchResults}
+	{call .answers_universalSearchResults}
+		{param hideQASubmission: true}
+	{/call}
+{/template}
