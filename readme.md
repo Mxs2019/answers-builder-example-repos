@@ -16,4 +16,4 @@ This is an alternative approach that more closely aligns to the vision of [bleec
 
 ## yext-v3
 
-Similar to V2 but using Closure instead of HBS. This will allows us to reuse templates.
+Similar to V2 but using Closure instead of HBS. This will allows us to reuse templates. I'm not a soy expert so this could be wrong...
