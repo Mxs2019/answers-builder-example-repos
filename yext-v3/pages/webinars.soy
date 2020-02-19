@@ -2,5 +2,8 @@
 title: Webinars
 description:
 ---
-{{> answers/partials/loadVerticalSearch }}
-{{> answers/partials/verticalSearchSimple}}
+{namespace page}
+{template .body}
+	{call .answers_loadVerticalSearch}
+	{call .answers_verticalSearchSimple}
+{/template}
